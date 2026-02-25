@@ -31,8 +31,8 @@ CI Pipeline for a Java Maven application to build and push to the repository
 ### Install Node.js and npm
 1. Log into the Jenkins container as root by running the following command as 
 
-```docker exec -it -u 0 <container ID or name> bash
-```
+`docker exec -it -u 0 <container ID or name> bash`
+
 
 
 ## Configure Docker to be available on the Jenkins server
