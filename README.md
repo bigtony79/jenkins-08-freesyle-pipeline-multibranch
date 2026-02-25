@@ -18,6 +18,7 @@ CI Pipeline for a Java Maven application to build and push to the repository
   - Push to private DockerHub repository
 
 ## Install Build Tools 
+### Install Maven
 1. Log into Jenkins and go to "Manage Jenkins" by clicking on the Gear icon on the top right
 2. Click on Tools 
 ![alt text](images/maven-build.png)
@@ -26,6 +27,13 @@ CI Pipeline for a Java Maven application to build and push to the repository
 5. Select the desired version under "Install from Apache" block
 6. Click "Apply" and "Save" buttons.
 ![alt text](images/image2.png)
+
+### Install Node.js and npm
+1. Log into the Jenkins container as root by running the following command as 
+
+```docker exec -it -u 0 <container ID or name> bash
+```
+
 
 ## Configure Docker to be available on the Jenkins server
 ## 
