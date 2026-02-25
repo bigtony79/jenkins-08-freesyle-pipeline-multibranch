@@ -84,8 +84,12 @@ In this setup, I configured Jenkins to authenticate using a GitHub Personal Acce
  		- Maven package
      ![alt text](images/image13.png)
      ![alt text](images/image14.png)
+     ![alt text](images/image15.png)
 
 2. Save the job and run "Build now" to launch it.
+   ![alt text](images/image16.png)
+   ![alt text](images/image17.png)
+   ![alt text](images/image18.png)
 
 
 
