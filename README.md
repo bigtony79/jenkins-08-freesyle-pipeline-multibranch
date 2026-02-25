@@ -54,9 +54,12 @@ npm -v
 2. Enter a name for job. For example, you can enter "my-freestyle-job"
 3. Select "Freestyle project" and click "Ok" button
    ![alt text](images/image4.png)
-5. In the next screen, you have various options to build steps of the job. For example , you can click on the "+ Add build step" and select "Execute shell" to run arbitrary shell commands (such as ls, echo, docker builder etc.) and scripts.
+4. In the next screen, you have various options to build steps of the job. For example , you can click on the "+ Add build step" and select "Execute shell" to run arbitrary shell commands (such as ls, echo, docker builder etc.) and scripts.
    ![alt text](images/image5.png)
-7. Once the job is saved, you can see the job from the dashboard on the home page:
+   We will enter simple commands as shown below and save the job:
+   ![alt text](images/image6.png)
+5. Once the job is saved, you can see the job from the dashboard on the home page:
+   ![alt text](images/image7.png)
 8. Click on the job and you will see various options such as "Configure" to modify the job and "Build Now" to run the job.
 9. Click on "Build Now" and check the status of the build:
 10. You can click on the builder number (for example "#2" as shown above) to view details of the build.
