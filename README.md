@@ -60,12 +60,15 @@ npm -v
    ![alt text](images/image6.png)
 5. Once the job is saved, you can see the job from the dashboard on the home page:
    ![alt text](images/image7.png)
-8. Click on the job and you will see various options such as "Configure" to modify the job and "Build Now" to run the job.
-9. Click on "Build Now" and check the status of the build:
-10. You can click on the builder number (for example "#2" as shown above) to view details of the build.
-11. Let's modify our freestyle job by adding a build step to invoke Maven and check for its version:
-12. Save the changes and click "Build Now" to re-run the job. You will see a different output compared to the last build:
-13. As you can see above, even though we installed nodejs and npm via command line instead of plugin, it offers much more flexibility since we can easily run multiple commands and scripts in the "Execute shell" option. With a plugin, you are limited to the input fields provided by the plugin offering less flexibility.
+6. Click on the job and you will see various options such as "Configure" to modify the job and "Build Now" to run the job.   
+7. Click on "Build Now" and check the status of the build:
+    ![alt text](images/image8.png)
+8. You can click on the builder number (for example "#2" as shown above) to view details of the build.
+   ![alt text](images/image9.png)
+9. Let's modify our freestyle job by adding a build step to invoke Maven and check for its version:
+    ![alt text](images/image10.png)
+14. Save the changes and click "Build Now" to re-run the job. You will see a different output compared to the last build:
+15. As you can see above, even though we installed nodejs and npm via command line instead of plugin, it offers much more flexibility since we can easily run multiple commands and scripts in the "Execute shell" option. With a plugin, you are limited to the input fields provided by the plugin offering less flexibility.
 
 
 
