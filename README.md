@@ -34,7 +34,18 @@ CI Pipeline for a Java Maven application to build and push to the repository
 ``` 
 docker exec -it -u 0 <container ID or name> bash
 ```
+2. Update the package list and install Node.js and npm by running the following commands:
 
+```
+apt update
+apt install -y nodejs npm
+```
+3. Verify node.js and npm packages are installed
+
+```
+node -v
+npm -v
+```
 
 
 ## Configure Docker to be available on the Jenkins server
