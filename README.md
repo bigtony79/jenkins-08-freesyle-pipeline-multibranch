@@ -51,7 +51,23 @@ npm -v
 ## Create Freestyle job
 1. Click create "Create a job"
 2. Enter a name for job. For example, you can enter "my-freestyle-job"
-3. Select "Freestyle project" and click "Ok" button <img width="344" height="19" alt="image" src="https://github.com/user-attachments/assets/db294dd4-bcdb-4aaf-b691-4e5cbd1b94c8" />
+3. Select "Freestyle project" and click "Ok" button
+4. In the next screen, you have various options to build steps of the job. For example , you can click on the "+ Add build step" and select "Execute shell" to run arbitrary shell commands (such as ls, echo, docker builder etc.) and scripts.
+5. Once the job is saved, you can see the job from the dashboard on the home page:
+6. Click on the job and you will see various options such as "Configure" to modify the job and "Build Now" to run the job.
+7. Click on "Build Now" and check the status of the build:
+8. You can click on the builder number (for example "#2" as shown above) to view details of the build.
+9. Let's modify our freestyle job by adding a build step to invoke Maven and check for its version:
+10. Save the changes and click "Build Now" to re-run the job. You will see a different output compared to the last build:
+11. As you can see above, even though we installed nodejs and npm via command line instead of plugin, it offers much more flexibility since we can easily run multiple commands and scripts in the "Execute shell" option. With a plugin, you are limited to the input fields provided by the plugin offering less flexibility.
+
+
+
+
+
+
+
+
 
 
 
