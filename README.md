@@ -48,7 +48,7 @@ npm -v
 ```
 
 
-## Create Freestyle job
+## Create Simple Freestyle job
 1. Click create "Create a job"
 2. Enter a name for job. For example, you can enter "my-freestyle-job"
 3. Select "Freestyle project" and click "Ok" button
