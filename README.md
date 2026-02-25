@@ -48,7 +48,7 @@ npm -v
 ```
 
 
-## Create Simple Freestyle job with GitHub repository
+## Create Simple Freestyle job without GitHub repository
 1. Click create "Create a job"
     ![alt text](images/image3.png)
 2. Enter a name for job. For example, you can enter "my-freestyle-job"
