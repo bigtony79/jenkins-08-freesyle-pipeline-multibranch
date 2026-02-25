@@ -67,8 +67,10 @@ npm -v
    ![alt text](images/image9.png)
 9. Let's modify our freestyle job by adding a build step to invoke Maven and check for its version:
     ![alt text](images/image10.png)
-14. Save the changes and click "Build Now" to re-run the job. You will see a different output compared to the last build:
-15. As you can see above, even though we installed nodejs and npm via command line instead of plugin, it offers much more flexibility since we can easily run multiple commands and scripts in the "Execute shell" option. With a plugin, you are limited to the input fields provided by the plugin offering less flexibility.
+10. Save the changes and click "Build Now" to re-run the job. You will see a different output compared to the last build:
+    ![alt text](images/image11.png)
+    ![alt text](images/image12.png)
+11. As you can see above, even though we installed nodejs and npm via command line instead of plugin, it offers much more flexibility since we can easily run multiple commands and scripts in the "Execute shell" option. With a plugin, you are limited to the input fields provided by the plugin offering less flexibility.
 
 
 
