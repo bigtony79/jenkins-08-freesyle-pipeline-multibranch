@@ -13,7 +13,7 @@ CI Pipeline for a Java Maven application to build and push to the repository
 * Create Jenkins credentials for a git repository
 * Create different Jenkins job types (Freestyle, Pipeline, Multibranch pipeline) for the Java Maven project with Jenkinsfile to:
   - Connect to the application’s git repository
-  - Build Jar
+  - Build JAR
   - Build Docker Image
   - Push to private DockerHub repository
 
