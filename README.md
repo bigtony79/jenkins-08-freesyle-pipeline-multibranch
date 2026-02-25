@@ -49,7 +49,7 @@ npm -v
 
 
 ## Create Simple Freestyle job
-1. Click create "Create a job"
+1. Click create "Create a job" ![alt text](images/image3.png)
 2. Enter a name for job. For example, you can enter "my-freestyle-job"
 3. Select "Freestyle project" and click "Ok" button
 4. In the next screen, you have various options to build steps of the job. For example , you can click on the "+ Add build step" and select "Execute shell" to run arbitrary shell commands (such as ls, echo, docker builder etc.) and scripts.
