@@ -48,7 +48,7 @@ npm -v
 ```
 
 
-## Create Simple Freestyle job
+## Create Simple Freestyle job with GitHub repository
 1. Click create "Create a job"
     ![alt text](images/image3.png)
 2. Enter a name for job. For example, you can enter "my-freestyle-job"
@@ -71,6 +71,9 @@ npm -v
     ![alt text](images/image11.png)
     ![alt text](images/image12.png)
 11. As you can see above, even though we installed nodejs and npm via command line instead of plugin, it offers much more flexibility since we can easily run multiple commands and scripts in the "Execute shell" option. With a plugin, you are limited to the input fields provided by the plugin offering less flexibility.
+
+## Create Freestyle job with GitHub repository
+To build code directly from a GitHub repository using Jenkins, you can create a Freestyle job and configure Jenkins to pull code from source control automatically. Because GitHub requires authentication to access private repositories, Jenkins needs valid credentials. In this setup, I configured Jenkins to authenticate using a GitHub Personal Access Token (PAT). The PAT is stored securely under Jenkins → Credentials, and the credentials are then linked to the Freestyle job. Jenkins uses the token to clone the repository during each build, enabling automated pulls without manual login.
 
 
 
