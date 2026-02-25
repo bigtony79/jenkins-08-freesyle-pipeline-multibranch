@@ -33,7 +33,6 @@ CI Pipeline for a Java Maven application to build and push to the repository
 
 ``` 
 docker exec -it -u 0 <container ID or name> bash
-
 ```
 
 
