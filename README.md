@@ -82,6 +82,8 @@ In this setup, I configured Jenkins to authenticate using a GitHub Personal Acce
 	- We will use the branch "jenkins-branch" to run the following build steps:
 		- Maven test
  		- Maven package
+     ![alt text](images/image13.png)
+     ![alt text](images/image14.png)
 
 2. Save the job and run "Build now" to launch it.
 
