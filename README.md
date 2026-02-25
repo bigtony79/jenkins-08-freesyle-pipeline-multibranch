@@ -18,5 +18,7 @@ CI Pipeline for a Java Maven application to build and push to the repository
   - Push to private DockerHub repository
 
 ## Install Build Tools 
+![alt text](images/maven-build.png)
+
 ## Configure Docker to be available on the Jenkins server
 ## 
