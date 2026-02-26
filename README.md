@@ -94,8 +94,8 @@ In this setup, I configured Jenkins to authenticate using a GitHub Personal Acce
 ## Make Docker available in Jenkins
 Since Jenkins is running as a Docker container on the host droplet, we need to mount the host’s Docker runtime into the Jenkins container. This allows Jenkins to execute Docker commands (build, run, push images, etc.) directly on the host.
 
-1. Restart Jenkins with Docker Socket Mounted
-First, stop/remove your currently running Jenkins container.No data will be lost—your Jenkins home directory is already mounted to a host volume.
+1. Restart Jenkins with Docker Socket Mounted  
+   First, stop/remove your currently running Jenkins container.No data will be lost—your Jenkins home directory is already mounted to a host volume.
 Run Jenkins with the Docker socket mounted:
 ```
 	docker run -p 8080:8080 -p 50000:50000 \
@@ -103,9 +103,8 @@ Run Jenkins with the Docker socket mounted:
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	jenkins/jenkins:lts
 ```
-2. Access the Container as root
-
-To install Docker inside the Jenkins container:
+2. Access the Container as root  
+   To install Docker inside the Jenkins container:
 ```
 	docker exec -u 0 -it <container_id_or_name> bash
 ```
