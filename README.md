@@ -103,7 +103,7 @@ Run Jenkins with the Docker socket mounted:
 	-v /var/run/docker.sock:/var/run/docker.sock \
 	jenkins/jenkins:lts
 ```
-2. Access the Container as root
+2. Access the Container as root<br>
 To install Docker inside the Jenkins container:
 ```
 	docker exec -u 0 -it <container_id_or_name> bash
