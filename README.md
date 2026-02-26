@@ -108,7 +108,29 @@ Run Jenkins with the Docker socket mounted:
 ```
 	docker exec -u 0 -it <container_id_or_name> bash
 ```
+3. **Install Docker inside the Jenkins Container**
+   run the docker installation script:
+   ```  		
+		curl -fsSL https://get.docker.com -o dockerinstall
+		chmod 777 dockerinstall
+		./dockerinstall
+   ```
+4. **Fix Docker Socket Permissions**
+   Allow the Jenkins user to access the mounted Docker socket:
+   ```
+   		chmod 666 /var/run/docker.sock
+   ```
+5. **Switch back to jenkins user**  
+   Exit root and switch back to the Jenkins user inside the container:
+   ```
+   		docker exec -it <conatiner_id_or_name> bash
+   ```
+   You can now run Docker commands directly from Jenkins—enabling Docker builds, pipelines, and containerized workflows.
+   		
 
+
+
+   	
  
 
 
