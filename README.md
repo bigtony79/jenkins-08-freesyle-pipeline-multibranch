@@ -126,6 +126,9 @@ Run Jenkins with the Docker socket mounted:
 	docker exec -it <conatiner_id_or_name> bash
 ```
 You can now run Docker commands directly from Jenkins—enabling Docker builds, pipelines, and containerized workflows.
+
+## Jenkins Freestyle job to push Docker images to Docker Hub
+This section explains how to securely configure Jenkins to authenticate with Docker Hub using a Personal Access Token (PAT), build a Docker image from your Maven application, and push it to your Docker Hub repository.
    		
 
 
