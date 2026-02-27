@@ -130,7 +130,7 @@ You can now run Docker commands directly from Jenkins—enabling Docker builds, 
 ## Jenkins Freestyle job to push Docker images to Docker Hub
 This section explains how to securely configure Jenkins to authenticate with Docker Hub using a Personal Access Token (PAT), build a Docker image from your Maven application, and push it to your Docker Hub repository.
    		
-1. **Create a Docker Hub Personal Access Token (PAT)**   
+**1. Create a Docker Hub Personal Access Token (PAT)**   
 	To allow Jenkins to upload Docker images to your Docker Hub account:  
  		1. Log in to Docker Hub  
  		2. Navigate to Account Settings → Security  
