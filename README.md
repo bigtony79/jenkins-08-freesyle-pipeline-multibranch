@@ -159,19 +159,17 @@ This section explains how to securely configure Jenkins to authenticate with Doc
 These environment variables ($USER and $PASS) will be available during the build.
 
 **4. Add Build step to build and push Docker image**  
-Click Add Build Step → Execute Shell and enter the following commands with the appropriate repository and tag name:
+Click Add Build Step → Execute Shell and enter the following commands with the appropriate repository and tag names:
 ```
 	docker build -t <docker_hub_repo_name>:<tag> .
 	docker login -u $USER -p $PASS
 	docker push <docker_hub_repo_name>:<tag>
 ```
-Running the job at this stage should successfully:
-	- Build the Docker image
-	- Authenticate to Docker Hub
-	- Push the image
-	- You’ll see confirmation messages in the console output.
-
-   	
+Running the job at this stage should successfully:  
+	- Build the Docker image  
+	- Authenticate to Docker Hub  
+	- Push the image  
+	- You’ll see confirmation messages in the console output    	
  
 
 
