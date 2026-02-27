@@ -171,7 +171,9 @@ Running the job at this stage should successfully:
 	- Push the image  
 	- You’ll see confirmation messages in the console output    	
  
-
+**5. Test**  
+	1. Test
+1.	Test
 
 
 
