@@ -137,7 +137,6 @@ This section explains how to securely configure Jenkins to authenticate with Doc
  		3. Create a new Personal Access Token (PAT)  
  		4. Copy the token — this will be used as Jenkins credentials  
 
-
 **2. Add Docker Hub Credentials to Jenkins**  
 	1. Go to: Jenkins → Manage Jenkins → Credentials → System → Global Credentials  
 	2. Click Add Credentials  
@@ -147,20 +146,16 @@ This section explains how to securely configure Jenkins to authenticate with Doc
 	6. Give it a recognizable ID (e.g., dockerhub-creds)  
 	7. Save  
 
-
 **3. Bind Credentials in the Freestyle Job**   
 	1. Edit your existing Freestyle job and navigate to:  
 	2. Build Environment → Use secret text(s) or file(s)  
 	3. Click Add under Bindings  
 	4. From the dropdown, choose:  
 	   - Username and password (separated)  
-	6. Provide variable names:  
+	5. Provide variable names:  
 	   - Username Variable: USER  
 	   - Password Variable: PASS  
-
-
-From the Credentials dropdown, select the Docker Hub credential you added earlier
-
+	6. From the Credentials dropdown, select the Docker Hub credential you added earlier  
 These environment variables ($USER and $PASS) will be available during the build.
 
 
