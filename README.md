@@ -132,7 +132,7 @@ This section explains how to securely configure Jenkins to authenticate with Doc
    		
 **1. Create a Docker Hub Personal Access Token (PAT)**  
 
-  To allow Jenkins to upload Docker images to your Docker Hub account:
+To allow Jenkins to upload Docker images to your Docker Hub account:
 1.	Log in to Docker Hub  
 2.	Navigate to Account Settings → Security  
 3.	Create a new Personal Access Token (PAT)  
