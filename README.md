@@ -148,17 +148,15 @@ This section explains how to securely configure Jenkins to authenticate with Doc
 	7. Save  
 
 
-3. Bind Credentials in the Freestyle Job
-Edit your existing Freestyle job and navigate to:
-Build Environment → Use secret text(s) or file(s)
-
-Click Add under Bindings
-From the dropdown, choose:
-Username and password (separated)
-Provide variable names:
-
-Username Variable: USER
-Password Variable: PASS
+**3. Bind Credentials in the Freestyle Job**   
+1. Edit your existing Freestyle job and navigate to:  
+2. Build Environment → Use secret text(s) or file(s)  
+3. Click Add under Bindings  
+4. From the dropdown, choose:  
+   - Username and password (separated)  
+6. Provide variable names:  
+   - Username Variable: USER  
+   - Password Variable: PASS  
 
 
 From the Credentials dropdown, select the Docker Hub credential you added earlier
