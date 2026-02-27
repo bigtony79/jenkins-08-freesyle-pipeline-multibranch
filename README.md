@@ -158,6 +158,9 @@ This section explains how to securely configure Jenkins to authenticate with Doc
 	6. From the Credentials dropdown, select the Docker Hub credential you added earlier  
 These environment variables ($USER and $PASS) will be available during the build.
 
+**4. Add Build step to build and push Docker image**  
+1.	Hello World!
+
 
    	
  
