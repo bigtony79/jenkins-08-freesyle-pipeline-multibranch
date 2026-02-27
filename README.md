@@ -139,7 +139,7 @@ Create a new Personal Access Token (PAT)
 Copy the token — this will be used as Jenkins credentials
 
 
-✅ 2. Add Docker Hub Credentials to Jenkins
+2. Add Docker Hub Credentials to Jenkins
 
 Go to:
 Jenkins → Manage Jenkins → Credentials → System → Global Credentials
@@ -154,7 +154,7 @@ Give it a recognizable ID (e.g., dockerhub-creds)
 Save
 
 
-✅ 3. Bind Credentials in the Freestyle Job
+3. Bind Credentials in the Freestyle Job
 Edit your existing Freestyle job and navigate to:
 Build Environment → Use secret text(s) or file(s)
 
