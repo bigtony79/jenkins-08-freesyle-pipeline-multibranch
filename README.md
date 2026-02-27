@@ -159,6 +159,7 @@ To allow Jenkins to upload Docker images to your Docker Hub account:
 6.	From the Credentials dropdown, select the Docker Hub credential you added earlier  
 These environment variables ($USER and $PASS) will be available during the build.
 ![alt text](images/image19.png)
+![alt text](images/image20.png)
 
 **4. Add Build step to build and push Docker image**  
 Click Add Build Step → Execute Shell and enter the following commands with the appropriate repository and tag names:
