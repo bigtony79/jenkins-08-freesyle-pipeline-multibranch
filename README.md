@@ -168,7 +168,7 @@ Click Add Build Step → Execute Shell and enter the following commands with the
 	echo $PASS | docker login -u $USER --password-stdin
 	docker push <docker_hub_repo_name>:<tag>
 ```
-![alt text](images/image21.png)
+
 Running the job at this stage should successfully:  
 	- Build the Docker image  
 	- Authenticate to Docker Hub  
