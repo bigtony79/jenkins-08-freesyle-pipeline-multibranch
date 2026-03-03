@@ -186,62 +186,62 @@ Running the job at this stage should successfully:
 ![alt text](images/image24.png)
 6. I used the following simple Jenkinsfile along with groovy script to recreate the above freestyle pipeline
    ```
-   def gv
+    def gv
 
-pipeline {
-  agent any
+	pipeline {
+	  agent any
+	
+	  tools {
+	    maven "maven-3.9"
+	  }
 
-  tools {
-    maven "maven-3.9"
-  }
-
-  stages {
-
-    stage("init") {
-      steps {
-        script {
-          
-          gv = load "script.groovy"
-          echo "initializing the pipeline..."
-        }
-      }
-    }
-
-    stage("build jar") {
-      steps {
-        script {
-          gv.buildJar()
-        }
-      }
-    }
-
-    stage("build docker image") {
-      steps {
-        script {
-          gv.buildImage()
-        }
-      }
-    }
-
-    stage("deploy") {
-      steps {
-        script {
-          gv.deployApp()
-        }
-      }
-    }
-  }
-
-  post {
-    always {
-      echo "Pipeline completed."
-    }
-    failure {
-      echo "Pipeline failed."
-    }
-  }
-}
-
+	  stages {
+	
+	    stage("init") {
+	      steps {
+	        script {
+	          
+	          gv = load "script.groovy"
+	          echo "initializing the pipeline..."
+	        }
+	      }
+	    }
+	
+	    stage("build jar") {
+	      steps {
+	        script {
+	          gv.buildJar()
+	        }
+	      }
+	    }
+	
+	    stage("build docker image") {
+	      steps {
+	        script {
+	          gv.buildImage()
+	        }
+	      }
+	    }
+	
+	    stage("deploy") {
+	      steps {
+	        script {
+	          gv.deployApp()
+	        }
+	      }
+	    }
+	  }
+	
+	  post {
+	    always {
+	      echo "Pipeline completed."
+	    }
+	    failure {
+	      echo "Pipeline failed."
+	    }
+	  }
+	}
+```
 
 
 
