@@ -244,7 +244,8 @@ Running the job at this stage should successfully:
 	}
 	```
    ```
-   	def buildJar() {
+	//script.groovy
+   def buildJar() {
     	echo "building the application ..."
    	 	sh 'mvn package'
 	}
