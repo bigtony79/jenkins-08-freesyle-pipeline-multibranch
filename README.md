@@ -182,6 +182,8 @@ Running the job at this stage should successfully:
 3. Select 'Git'for SCM and enter the desired repo URL (in my case, it will be https://github.com/bigtony79/java-maven-app.git). Select the appropriate GitHub credentials to allow Jenkins to authenticate with GitHub.
 4. Specify the branch to build. I will use 'jenkins-jobs' branch from my repository.
 5. For ScriptPath, make sure Jenkinsfile is entered in the field.
+![alt text](images/image23.png)
+![alt text](images/image24.png)
 
 
 
