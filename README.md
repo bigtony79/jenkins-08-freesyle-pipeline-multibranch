@@ -175,7 +175,8 @@ Running the job at this stage should successfully:
 	- Push the image  
 	- You’ll see confirmation messages in the console output and the new image in Docker Hub.
 ![alt text](images/image22.png)
- 
+
+## Freestyle to Pipeline Job
 
 
 
