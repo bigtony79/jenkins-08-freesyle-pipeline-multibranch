@@ -78,7 +78,7 @@ To build code directly from a GitHub repository using Jenkins, you can create a 
 In this setup, I configured Jenkins to authenticate using a GitHub Personal Access Token (PAT). The PAT is stored securely under Jenkins → Credentials, and the credentials are then linked to the Freestyle job. Jenkins uses the token to clone the repository during each build, enabling automated pulls without manual login.
 
 1. Create a new Freestyle job and select "Git" under Source Code Management block
-	- Enter repository URL and create Credentials for PAT for Jenkins to access GitHub account
+	- Enter repository URL (https://github.com/bigtony79/java-maven-app.git) and create Credentials for PAT for Jenkins to access GitHub account
 	- We will use the branch "jenkins-branch" to run the following build steps:
 		- Maven test
  		- Maven package
