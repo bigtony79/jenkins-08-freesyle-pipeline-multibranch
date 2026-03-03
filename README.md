@@ -267,7 +267,93 @@ Running the job at this stage should successfully:
 	return this
 	```
 ## Multibranch Pipeline
+1. Login into Jenkins and from home page, click on "New item". Enter an item name such as 'java-maven-multi-pipeline' , select 'Multibranch Pipeline' as Item type and Click 'Ok'.
+2. Under branch sources, select Git and enter URL for repository (https://github.com/bigtony79/java-maven-app.git) and select the appropriate Git credentials stored in Jenkins.
+3. Under behaviors, select 'Discover Branches'. This will find all of the branches under the repo.
+4. Click Apply and Save.
+5. Jenkinsfile
+   ```
+   		def gv
 
+pipeline {
+  agent any
+
+  tools {
+    maven "maven-3.9"
+  }
+
+  stages {
+
+    stage("init") {
+      steps {
+        script {
+          
+          gv = load "script.groovy"
+          echo "initializing the pipeline..."
+        }
+      }
+    }
+
+    stage("test") {
+      steps {
+        script {
+          gv.runTests()
+        }
+      }
+    }
+
+    stage("build jar") {
+      when {
+        expression {
+          BRANCH_NAME == "main" //This variable is only available in multibranch pipeline.
+         }
+      }
+      steps {
+        script {
+          gv.buildJar()
+        }
+      }
+    }
+
+    stage("build docker image") {
+      when {
+        expression {
+          BRANCH_NAME == "main" //This variable is only available in multibranch pipeline.
+         }
+      }
+      
+      steps {
+        script {
+          gv.buildImage()
+        }
+      }
+    }
+
+    stage("deploy") {
+      when {
+        expression {
+          BRANCH_NAME == "main" //This variable is only available in multibranch pipeline.
+         }
+      }
+      
+      steps {
+        script {
+          gv.deployApp()
+        }
+      }
+    }
+  }
+
+  post {
+    always {
+      echo "Pipeline completed."
+    }
+    failure {
+      echo "Pipeline failed."
+    }
+  }
+}
+```
 
 
 
