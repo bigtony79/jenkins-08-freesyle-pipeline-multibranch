@@ -273,7 +273,7 @@ Running the job at this stage should successfully:
 4. Click Apply and Save.
 5. Jenkinsfile
    ```
-   		def gv
+   def gv
 
 	pipeline {
 	  agent any
