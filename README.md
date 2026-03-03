@@ -177,7 +177,11 @@ Running the job at this stage should successfully:
 ![alt text](images/image22.png)
 
 ## Freestyle to Pipeline Job
-
+1. Login into Jenkins and from home page, click on "New item". Enter an item name such as 'java-maven-pipeline' , select 'Pipeline' as Item type and Click 'Ok'.
+2. On the next screen, go to Pipeline section and select 'Pipeline script from SCM' from the dropdown list.
+3. Select 'Git'for SCM and enter the desired repo URL (in my case, it will be https://github.com/bigtony79/java-maven-app.git). Select the appropriate GitHub credentials to allow Jenkins to authenticate with GitHub.
+4. Specify the branch to build. I will use 'jenkins-jobs' branch from my repository.
+5. For ScriptPath, make sure Jenkinsfile is entered in the field.
 
 
 
