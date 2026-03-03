@@ -181,9 +181,66 @@ Running the job at this stage should successfully:
 2. On the next screen, go to Pipeline section and select 'Pipeline script from SCM' from the dropdown list.
 3. Select 'Git'for SCM and enter the desired repo URL (in my case, it will be https://github.com/bigtony79/java-maven-app.git). Select the appropriate GitHub credentials to allow Jenkins to authenticate with GitHub.
 4. Specify the branch to build. I will use 'jenkins-jobs' branch from my repository.
-5. For ScriptPath, make sure Jenkinsfile is entered in the field.
+5. For ScriptPath, make sure Jenkinsfile is entered in the field. Click Apply and then Save.
 ![alt text](images/image23.png)
 ![alt text](images/image24.png)
+6. I used the following simple Jenkinsfile along with groovy script to recreate the above freestyle pipeline
+   ```
+   def gv
+
+pipeline {
+  agent any
+
+  tools {
+    maven "maven-3.9"
+  }
+
+  stages {
+
+    stage("init") {
+      steps {
+        script {
+          
+          gv = load "script.groovy"
+          echo "initializing the pipeline..."
+        }
+      }
+    }
+
+    stage("build jar") {
+      steps {
+        script {
+          gv.buildJar()
+        }
+      }
+    }
+
+    stage("build docker image") {
+      steps {
+        script {
+          gv.buildImage()
+        }
+      }
+    }
+
+    stage("deploy") {
+      steps {
+        script {
+          gv.deployApp()
+        }
+      }
+    }
+  }
+
+  post {
+    always {
+      echo "Pipeline completed."
+    }
+    failure {
+      echo "Pipeline failed."
+    }
+  }
+}
 
 
 
